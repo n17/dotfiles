@@ -72,3 +72,5 @@
 (setq initial-scratch-message nil)
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(setq org-todo-keywords
+      '((sequence "TODO" "WAITING" "|" "DONE" "CANCELLED")))
