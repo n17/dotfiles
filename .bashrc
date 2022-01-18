@@ -122,7 +122,7 @@ alias dcu='docker-compose up -d'
 alias dcr='docker-compose restart'
 alias dcl='docker-compose logs -f'
 alias gs='git status'
-alias gsu='git submodule update init --recursive'
+alias gsu='git submodule update --init --recursive'
 
 # Need to install xclip for this one.
 alias cc='xclip -sel clip'
