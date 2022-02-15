@@ -74,3 +74,11 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (setq org-todo-keywords
       '((sequence "TODO" "WAITING" "|" "DONE" "CANCELLED")))
+
+(when (executable-find "ipython3")
+  (setq python-shell-interpreter "ipython3"))
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((lisp . t)))
+(setq org-babel-lisp-eval-fn #'sly-eval)
