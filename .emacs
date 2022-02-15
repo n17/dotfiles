@@ -75,6 +75,7 @@
 (setq org-todo-keywords
       '((sequence "TODO" "WAITING" "|" "DONE" "CANCELLED")))
 
+(setq python-shell-interpreter "/usr/bin/python3")
 (when (executable-find "ipython3")
   (setq python-shell-interpreter "ipython3"))
 
