@@ -77,9 +77,11 @@
 
 (setq python-shell-interpreter "/usr/bin/python3")
 (when (executable-find "ipython3")
-  (setq python-shell-interpreter "ipython3"))
+  (setq python-shell-interpreter "/usr/bin/ipython3"))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((lisp . t)))
+ '((lisp . t)
+   (python . t)
+   ))
 (setq org-babel-lisp-eval-fn #'sly-eval)
