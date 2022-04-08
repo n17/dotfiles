@@ -16,7 +16,7 @@
  '(org-export-backends (quote (ascii html icalendar latex md odt org)))
  '(package-selected-packages
    (quote
-    (slime ox-rst spacemacs-theme magit yaml-mode helm-projectile projectile helm paredit spaceline sly dashboard))))
+    (ox-slack slime ox-rst spacemacs-theme magit yaml-mode helm-projectile projectile helm paredit spaceline sly dashboard))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -55,6 +55,9 @@
  :ensure t)
 
 (use-package ox-rst
+  :ensure t)
+
+(use-package ox-slack
  :ensure t)
 
 (setq inferior-lisp-program "/usr/bin/sbcl")
